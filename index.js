@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname,'public')))
 app.set('view engine', 'ejs') 
 
-app.get('/', (req, res) =>{
+app.get('/Blog', (req, res) =>{
   fs.readdir(`./files`,function(error ,files){
     res.render('index',{files : files});
 
