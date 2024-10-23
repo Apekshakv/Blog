@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog application</title>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+
+</head>
+<body>
+    <h1>Create Your Own Blog Now</h1>
+    <div class="main">
+    <form  action="/create" method="post">
+        <input type="text" placeholder="Enter your text" class="vr" name="title"><br><br>
+        <textarea placeholder="Your notes go here" name="details"></textarea><br><br>
+        <input class="btn"type="submit" value="create-task">
+    </form> <br><br>
+   
+    <div class="ball">
+        <% if(files.length>0){ %>
+        <% files.forEach(function (val) { %>
+            <div class="gotext">
+                <h1><%= val %></h1>
+                <a href="/files/<%= val %>">Read more</a>
+
+            </div>
+            
+        <% })%>
+        <% } else { %>
+            <h3>No tasks yet</h3>
+          <% } %>
+           
+   
+    <div class="dumb">
+        
+    </div>
+    </div>
+</body>
+</html>
