@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    color: beige;
+}
+
+
+
+.vr {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.gotext { 
+    padding: 3px;
+    border-radius: 10px;
+    margin: 8px ;
+    width: 72vh;
+    background-color: gray;
+   
+}
+a{
+    color: blue;
+}
