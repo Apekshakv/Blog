@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog application</title>
+<style>
+    body{
+    background-color: black;
+    color: beige;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: green;
+    border-radius: 4px;
+}
+
+.main {
+    padding: 20px;
+}
+
+
+</style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Go back home</a></li>
+        </ul>
+    </nav>
+   <h1><%=filename %></h1>
+   <p><%=  filedata %>
+    
+</body>
+</html>
